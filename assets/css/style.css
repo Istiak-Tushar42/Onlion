@@ -1,26 +1,47 @@
-.header {
-  width: 100%;
-  background: dodgerblue;
+.header .navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+.header .navbar-brand::first-letter {
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .header .navbar-nav .nav-item .nav-link {
-  font-size: .9rem;
   font-weight: bold;
-  letter-spacing: .1rem;
   text-transform: uppercase;
-  color: black;
-}
-
-.header .navbar-nav .nav-item .nav-link:hover {
-  color: blue;
+  letter-spacing: .1rem;
 }
 
 .header .navbar-nav .nav-item.active .nav-link {
-  color: blue;
+  background: transparent !important;
+  color: rgba(255, 255, 255, 0.75);
 }
 
-.header .navbar-nav .dropdown-menu {
+.header .navbar-nav .nav-item.active .nav-link:hover {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.header .navbar-nav .nav-item.dropdown .dropdown-menu {
+  padding-top: 0;
+  padding-bottom: 0;
   border-radius: 0;
-  margin-top: 9px;
+  margin-top: 7px;
+}
+
+.header .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: white;
+}
+
+.header .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+  color: #2BBBAD;
+}
+
+.header .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:active {
+  background: white;
 }
 /*# sourceMappingURL=style.css.map */

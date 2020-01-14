@@ -1,27 +1,48 @@
 .header {
-    width: 100%;
-    background: dodgerblue;
+    .navbar-brand {
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 2rem;
+        &::first-letter {
+            color: rgba(255, 255, 255, .75);
+        }
+    }
     .navbar-nav {
         .nav-item {
             .nav-link {
-                font-size: .9rem;
                 font-weight: bold;
-                letter-spacing: .1rem;
                 text-transform: uppercase;
-                color: black;
-                &:hover {
-                    color: blue;
-                }
+                letter-spacing: .1rem;
             }
         }
         .nav-item.active {
             .nav-link {
-                color: blue;
+                background: transparent !important;
+                color: rgba(255, 255, 255, .75);
+                &:hover {
+                    color: rgba(255, 255, 255, .75) !important;
+                }
             }
         }
-        .dropdown-menu {
-            border-radius: 0;
-            margin-top: 9px;
+        .nav-item.dropdown {
+            .dropdown-menu {
+                padding-top: 0;
+                padding-bottom: 0;
+                border-radius: 0;
+                margin-top: 7px;
+                .dropdown-item {
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    letter-spacing: .1rem;
+                    color: white;
+                    &:hover {
+                        color: #2BBBAD;
+                    }
+                    &:active {
+                        background: white;
+                    }
+                }    
+            }
         }
     }
 }
