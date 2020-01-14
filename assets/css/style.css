@@ -1,0 +1,26 @@
+.header {
+  width: 100%;
+  background: dodgerblue;
+}
+
+.header .navbar-nav .nav-item .nav-link {
+  font-size: .9rem;
+  font-weight: bold;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  color: black;
+}
+
+.header .navbar-nav .nav-item .nav-link:hover {
+  color: blue;
+}
+
+.header .navbar-nav .nav-item.active .nav-link {
+  color: blue;
+}
+
+.header .navbar-nav .dropdown-menu {
+  border-radius: 0;
+  margin-top: 9px;
+}
+/*# sourceMappingURL=style.css.map */
