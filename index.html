@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/css/all.min.css">
     <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- MDB BOOTSTRAP -->
+    <link rel="stylesheet" href="assets/css/mdb.min.css">
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Onlion</title>
@@ -21,91 +23,83 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <nav class="navbar navbar-expand-lg navbar-light">
-                            <a class="navbar-brand font-weight-bold" href="#">Onlion</a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                          
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="#">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">About</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Design
-                                        </a>
-                                        <ul class="dropdown-menu py-0" aria-labelledby="navbarDropdown">
-                                            <li class="dropdown-item">
-                                                <a class="nav-link" href="#">Architectural Drawing</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="nav-link" href="#">Interior Drawing</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="nav-link" href="#">Structural Drawing</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="nav-link" href="#">Electrical &amp; Phemling Drawing</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="nav-link" href="#">3D Visualization</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Concrete
-                                        </a>
-                                        <ul class="dropdown-menu py-0" aria-labelledby="navbarDropdown">
-                                            <li class="dropdown-item">
-                                                <a href="#" class="nav-link">Rod</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a href="#" class="nav-link">Cement</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a href="#" class="nav-link">Ready Mix</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Construction
-                                        </a>
-                                        <ul class="dropdown-menu py-0" aria-labelledby="navbarDropdown">
-                                            <li class="dropdown-item">
-                                                <a href="#" class="nav-link">Soil Test</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="nav-link" href="#">Pilling</a>
-                                            </li>
-                                            <li class="dropdown-item dropdown-submenu">
-                                                <a data-toggle="dropdown" id="dropdown" href="#" class="nav-link">
-                                                    Structure
-                                                </a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="nav-link" href="#">Doors</a>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="nav-link" href="#">Window</a class="nav-link">
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a class="nav-link" href="#">Interior</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
+                        <!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark primary-color">
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">Navbar</a>
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <!-- Dropdown -->
+        <li class="nav-item dropdown multi-level-dropdown">
+          <a href="#" id="menu" data-toggle="dropdown" class="nav-link dropdown-toggle w-100">Dropdown</a>
+          <ul class="dropdown-menu mt-2 rounded-0 primary-color border-0 z-depth-1">
+            <li class="dropdown-item dropdown-submenu p-0">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle text-white w-100">Click Me Too! </a>
+              <ul class="dropdown-menu ml-2 rounded-0 primary-color border-0 z-depth-1">
+                <li class="dropdown-item p-0">
+                  <a href="#" class="text-white w-100">Hey</a>
+                </li>
+                <li class="dropdown-item p-0">
+                  <a href="#" class="text-white w-100">Hi</a>
+                </li>
+                <li class="dropdown-item dropdown-submenu p-0">
+                  <a href="#" data-toggle="dropdown" class="dropdown-toggle text-white w-100">Hello </a>
+                  <ul class="dropdown-menu mr-2 rounded-0 primary-color border-0 z-depth-1 r-100 ">
+                    <li class="dropdown-item p-0">
+                      <a href="#" class="text-white w-100">Some</a>
+                    </li>
+                    <li class="dropdown-item p-0">
+                      <a href="#" class="text-white w-100">Text</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown-item dropdown-submenu">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle text-white w-100">Click me </a>
+              <ul class="dropdown-menu mr-2 rounded-0  primary-color border-0 z-depth-1 r-100 ">
+                <li class="dropdown-item p-0">
+                  <a href="#" class="text-white w-100">How</a>
+                </li>
+                <li class="dropdown-item p-0">
+                  <a href="#" class="text-white w-100">are</a>
+                </li>
+                <li class="dropdown-item p-0">
+                  <a href="#" class="text-white w-100">you </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!-- Links -->
+      <form class="form-inline">
+        <div class="md-form my-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        </div>
+      </form>
+    </div>
+    <!-- Collapsible content -->
+  </nav>
+  <!--/.Navbar-->
                     </div>
                 </div>
             </div>
@@ -113,12 +107,24 @@
     </header>
     <!-- END HEADER -->
 
+    <!-- MAIN LAYOUT -->
+    <main>
 
+    </main>
+    <!-- END MAIN LAYOUT -->
+
+    <!-- FOOTER -->
+    <footer>
+
+    </footer>
+    <!-- END FOOTER -->
 
     <!-- OPTIONAL SCRIPTS -->
     <script src="assets/scripts/jquery-3.3.1.slim.min.js"></script>
     <script src="assets/scripts/popper.min.js"></script>
     <script src="assets/scripts/bootstrap.min.js"></script>
+    <!-- MDB SCRIPT -->
+    <script src="assets/scripts/mdb.min.js"></script>
     <!-- CUSTOM SCRIPTS -->
     <script src="assets/scripts/script.js"></script>
 </body>
