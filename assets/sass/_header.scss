@@ -1,47 +1,97 @@
 .header {
     .navbar-brand {
-        font-size: 2rem;
+        font-size: 40px;
         font-weight: bold;
-        line-height: 2rem;
+        color: white;
         &::first-letter {
-            color: rgba(255, 255, 255, .75);
+            color: rgba(255, 255, 255, 0.75);
         }
     }
     .navbar-nav {
         .nav-item {
             .nav-link {
+                color: white;
+                font-size: .9rem;
                 font-weight: bold;
+                left: .1rem;
                 text-transform: uppercase;
-                letter-spacing: .1rem;
+                &:hover {
+                    opacity: .75;
+                }
             }
         }
         .nav-item.active {
             .nav-link {
-                background: transparent !important;
-                color: rgba(255, 255, 255, .75);
-                &:hover {
-                    color: rgba(255, 255, 255, .75) !important;
-                }
+                opacity: .75;
             }
         }
         .nav-item.dropdown {
             .dropdown-menu {
-                padding-top: 0;
-                padding-bottom: 0;
-                border-radius: 0;
-                margin-top: 7px;
+                padding: 0;
+                background: rgba(255,255,255,.45);
                 .dropdown-item {
+                    padding: .5rem;
+                    text-transform: uppercase;
                     font-weight: bold;
+                    font-size: .9rem;
+                    color: rgba(15, 14, 14, 0.75);
+                    &:hover {
+                        background: rgba(255,255,255,.5);
+                    }
+                    &:focus {
+                        background: rgba(255,255,255,.5);
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    .carousel {
+        .carousel-indicators {
+            li {
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+            }
+        }
+        .carousel-item {
+            height: 100vh;
+            min-height: 300px;
+            background: no-repeat center center scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            img {
+                max-height: 100%;
+            }
+            .carousel-caption {
+                bottom: 240px;
+                h5 {
+                    font-size: 45px;
                     text-transform: uppercase;
                     letter-spacing: .1rem;
-                    color: white;
-                    &:hover {
-                        color: #2BBBAD;
-                    }
-                    &:active {
-                        background: white;
-                    }
-                }    
+                    margin-top: 25px;
+                }
+                p {
+                    width: 75%;
+                    margin: auto;
+                    font-size: 18px;
+                    line-height: 1.9;
+                }
+            }
+        }
+        .overlay {
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background: rgba(0,0,0,.5);
             }
         }
     }

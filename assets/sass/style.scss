@@ -1,1 +1,64 @@
+@import "_reset.scss";
 @import "_header.scss";
+
+/*=================================
+            DESCRIPTION
+===================================*/
+.descript {
+    height: 100vh;
+    .sqr-row {
+        &::before {
+            content: '';
+            display: table;
+        }
+        h2 {
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-style: normal;
+            letter-spacing: .3em;
+            text-decoration: none;
+            line-height: 1.4em;
+        }
+    }
+}
+
+/*=================================
+            PROJECT
+===================================*/
+.project {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/hero.jpg) no-repeat center center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .center {
+        z-index: 1;
+        h3 {
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: capitalize;
+            font-style: normal;
+            letter-spacing: .2em;
+            line-height: 1.6em;
+            color: white;
+            z-index: 1;
+        }
+    }
+
+    .overlay {
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0,0,0,.5);
+        }
+    }
+}

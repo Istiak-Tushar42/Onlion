@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, header {
+    height: 100%;
+}
+
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    overflow-x: hidden;
+}
+
+article, aside, figcaption, figure, footer, hgroup, main, section {
+    overflow: hidden;
+}
