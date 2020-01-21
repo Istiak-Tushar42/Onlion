@@ -1,3 +1,4 @@
+@import "_fonts.scss";
 @import "_reset.scss";
 @import "_header.scss";
 
@@ -5,7 +6,8 @@
             DESCRIPTION
 ===================================*/
 .descript {
-    height: 100vh;
+    // height: 100vh;
+    overflow: hidden;
     .sqr-row {
         &::before {
             content: '';
@@ -60,5 +62,15 @@
             right: 0;
             background: rgba(0,0,0,.5);
         }
+    }
+}
+
+/*=================================
+            PROJECT
+===================================*/
+.projects {
+    img {
+        width: 270px;
+        height: 140px;
     }
 }
