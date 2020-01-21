@@ -1,4 +1,4 @@
-.header {
+.mainHeader {
     background: rgba(0, 0, 0, .8);
     .navbar {
         .navbar-brand {
@@ -68,63 +68,5 @@
         //         width: 40px;
         //     }
         // }
-    }
-
-    .carousel {
-        .carousel-indicators {
-            li {
-                width: 15px;
-                height: 15px;
-                border-radius: 50%;
-            }
-        }
-        .carousel-item {
-            height: 100vh;
-            min-height: 300px;
-            background: no-repeat center center scroll;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            img {
-                max-height: 100%;
-            }
-            .carousel-caption {
-                bottom: 240px;
-                h5 {
-                    font-size: 45px;
-                    text-transform: uppercase;
-                    letter-spacing: .2rem;
-                    margin-top: 25px;
-                    font-family: 'Raleway', sans-serif;
-                    font-weight: bold;
-                }
-                p {
-                    width: 75%;
-                    margin: auto;
-                    font-size: 18px;
-                    line-height: 1.9;
-                }
-                .slogan {
-                    font-size: 20px;
-                    letter-spacing: .25rem;
-                    font-family: 'Source Sans Pro', sans-serif;
-                    font-weight: 400;
-                    font-style: normal;
-                }
-            }
-        }
-        .overlay {
-            &:after {
-                content: '';
-                display: block;
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                background: rgba(0,0,0,.5);
-            }
-        }
     }
 }

@@ -1,6 +1,7 @@
 @import "_fonts.scss";
 @import "_reset.scss";
 @import "_header.scss";
+@import "_footer.scss";
 
 /*=================================
             DESCRIPTION
@@ -31,7 +32,7 @@
 .project {
     width: 100%;
     height: 100vh;
-    background: url(../images/hero.jpg) no-repeat center center;
+    background: url(../images/hero.jpg) no-repeat center center/cover;
     background-attachment: fixed;
     display: flex;
     align-items: center;
@@ -72,5 +73,294 @@
     img {
         width: 270px;
         height: 140px;
+    }
+}
+
+/*=================================
+                INTERIOR
+===================================*/
+.interior {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/interi.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .center {
+        z-index: 1;
+        h3 {
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: capitalize;
+            font-style: normal;
+            letter-spacing: .2em;
+            line-height: 1.6em;
+            color: white;
+            z-index: 1;
+        }
+    }
+
+    .overlay {
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0,0,0,.5);
+        }
+    }
+}
+
+/*=================================
+        INTERIOR-DETAILS
+===================================*/
+.interior-details {
+    .card {
+        .card-body {
+            .card-text {
+                margin-top: 7rem;
+                text-align: center;
+                font-size: 32px;
+                color: #363636;
+                font-family: Arial;
+                font-weight: bold;
+                font-style: normal;
+                letter-spacing: 0em;
+                text-transform: none;
+                line-height: 1.1em;
+                font-family: 'Raleway', sans-serif;
+            }
+        }
+    }
+}
+
+/*=================================
+            FLOOR-PLAN
+===================================*/
+.floorPlans {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/floorplan.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .center {
+        z-index: 1;
+        h3 {
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: capitalize;
+            font-style: normal;
+            letter-spacing: .2em;
+            line-height: 1.6em;
+            color: white;
+            z-index: 1;
+        }
+    }
+
+    .overlay {
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0,0,0,.5);
+        }
+    }
+}
+
+/*=================================
+        FLOORPLAN-DETAILS
+===================================*/
+.floorplan-details {
+    .card {
+        .card-body {
+            .card-text {
+                margin-top: 7rem;
+                text-align: center;
+                font-size: 32px;
+                color: #363636;
+                font-family: Arial;
+                font-weight: 400;
+                font-style: normal;
+                letter-spacing: 0em;
+                text-transform: none;
+                line-height: 1.1em;
+                font-family: 'Raleway', sans-serif;
+            }
+        }
+    }
+
+    .lightbox {
+        img {
+            min-height: 200px;
+        }
+    }
+
+    .floor {
+        background: url(../images/floor.jpg) no-repeat center center/cover;
+        height: 500px;
+        width: 100%;
+
+        p {
+            text-align: center;
+            margin-top: 20%;
+            font-size: 2rem;
+            font-weight: bold;
+            z-index: 1;
+            color: white;
+
+        }
+    }
+
+    .overlay {
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0,0,0,.5);
+        }
+    }
+}
+
+/*=================================
+            PLAN-VIEW
+===================================*/
+.planview {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/floor.jpg) no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 5rem;
+    .center {
+        z-index: 1;
+        h3 {
+            font-size: 2rem;
+            font-weight: bold;
+            text-transform: capitalize;
+            font-style: normal;
+            letter-spacing: .2em;
+            line-height: 1.6em;
+            color: white;
+            z-index: 1;
+        }
+    }
+
+    .overlay {
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0,0,0,.5);
+        }
+    }
+}
+
+/*=================================
+        CREATIVE-PROCESS
+===================================*/
+.creativeprocess {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/create.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .center {
+        z-index: 1;
+        h3 {
+            font-size: 2rem;
+            font-weight: bold;
+            text-transform: capitalize;
+            font-style: normal;
+            letter-spacing: .2em;
+            line-height: 1.6em;
+            color: white;
+            z-index: 1;
+        }
+    }
+
+    .overlay {
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0,0,0,.75);
+        }
+    }
+}
+
+/*=================================
+        CREATIVE-SLIDER
+===================================*/
+.creativeslider {
+    height: 500px;
+    img {
+        height: 100%;
+    } 
+}
+
+
+/*=================================
+            OUR-CLIENTS
+===================================*/
+.ourclients {
+    .item {
+        img {
+            max-height: 150px;
+            width: auto;
+            max-width: 100%;
+        }
+    }
+
+    .sliderControl {
+        margin-top: 2rem;
+
+        .owl-nav {
+            div {
+                background: rgba(167, 163, 163, 0.5);
+                position: static;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                text-align: center;
+                vertical-align: middle;
+                cursor: pointer;
+                font-size: 25px;
+                line-height: 40px;
+
+                &:hover {
+                    background: rgba(0,0,0,.75);
+                    color: white;
+                }
+            }
+        }
     }
 }
