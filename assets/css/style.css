@@ -24,6 +24,11 @@ article, aside, figcaption, figure, footer, hgroup, main, section {
   overflow: hidden;
 }
 
+.btn:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
 .header {
   background: rgba(0, 0, 0, 0.8);
 }
@@ -140,9 +145,12 @@ article, aside, figcaption, figure, footer, hgroup, main, section {
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.75);
 }
 
+/*=================================
+            FOOTER
+===================================*/
 .footer .card .card-body a {
   color: #212529;
 }
@@ -157,12 +165,18 @@ article, aside, figcaption, figure, footer, hgroup, main, section {
   font-size: 26px;
 }
 
-.footer .card .card-body .nav .nav-item:hover .nav-link {
-  color: rgba(0, 0, 0, 0.75);
-}
-
 .footer .card .card-body .nav .nav-item .card-text {
   font-size: 1.1rem;
+}
+
+.footer .card .card-body .nav:hover .nav-item .nav-link {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  color: #aaa;
+}
+
+.footer .card .card-body .nav:hover .nav-item:hover .nav-link {
+  color: #363636;
 }
 
 /*=================================
@@ -183,6 +197,7 @@ article, aside, figcaption, figure, footer, hgroup, main, section {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  font-family: 'Raleway', sans-serif;
 }
 
 .getintouch .center {
@@ -208,7 +223,56 @@ article, aside, figcaption, figure, footer, hgroup, main, section {
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/*=================================
+                CONTACT
+===================================*/
+.contact {
+  font-family: 'Raleway', sans-serif;
+}
+
+.contact .card .card-body .form-group .form-control {
+  background: #fafafa;
+  border-radius: 0;
+  border: solid 1px #ccc;
+  margin-bottom: 1.5rem;
+}
+
+.contact .card .card-body .form-group .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: white;
+}
+
+.contact .card .card-body .form-group textarea {
+  resize: none;
+}
+
+.contact .card .card-body .my-btn {
+  width: 150px;
+  border-radius: 0;
+  padding: .5rem 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  border: solid 1px #363636;
+  color: #363636;
+}
+
+.contact .card .card-body .my-btn:hover {
+  background: #363636;
+  color: white;
+}
+
+.contact .card .card-body .nav .nav-item {
+  margin-bottom: 1rem;
+}
+
+.contact .card .card-body .lead a {
+  text-decoration: none;
+  color: #333;
 }
 
 /*=================================

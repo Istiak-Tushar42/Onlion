@@ -19,3 +19,9 @@ body {
 article, aside, figcaption, figure, footer, hgroup, main, section {
     overflow: hidden;
 }
+
+.btn {
+    &:focus {
+        box-shadow: none !important;
+    }
+}

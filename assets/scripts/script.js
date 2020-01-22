@@ -28,7 +28,7 @@ $('.owl-carousel').owlCarousel({
 });
 
 // OWL-CONTROL
-var owl = $('.owl-carousel');
+let owl = $('.owl-carousel');
 owl.owlCarousel();
 // Go to the next item
 $('.prevBtn').click(function() {

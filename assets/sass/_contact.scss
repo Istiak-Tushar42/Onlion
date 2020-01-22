@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    font-family: 'Raleway', sans-serif;
     .center {
         z-index: 1;
         h3 {
@@ -33,7 +34,60 @@
             left: 0;
             bottom: 0;
             right: 0;
-            background: rgba(0,0,0,.5);
+            background: rgba(0,0,0,.8);
+        }
+    }
+}
+
+/*=================================
+                CONTACT
+===================================*/
+.contact {
+    font-family: 'Raleway', sans-serif;
+    .card {
+        .card-body {
+            .form-group {
+                .form-control {
+                    background: #fafafa;
+                    border-radius: 0;
+                    border: solid 1px #ccc;
+                    margin-bottom: 1.5rem;
+                    &:focus {
+                        box-shadow: none;
+                        background: white;
+                    }
+
+                }
+                textarea {
+                    resize: none;
+                }
+            }
+            .my-btn {
+                width: 150px;
+                border-radius: 0;
+                padding: .5rem 0;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: .1rem;
+                border: solid 1px #363636;
+                color: #363636;
+                &:hover {
+                    background: #363636;
+                    color: white;
+                }
+            }
+            .nav {
+                .nav-item {
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .lead {
+                a {
+                    text-decoration: none;
+                    color: #333;
+                }
+            }
         }
     }
 }

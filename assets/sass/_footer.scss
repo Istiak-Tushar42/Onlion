@@ -1,3 +1,6 @@
+/*=================================
+            FOOTER
+===================================*/
 .footer {
     .card {
         .card-body {
@@ -14,14 +17,22 @@
                             font-size: 26px;
                         }
                     }
-                    &:hover {
-                        .nav-link {
-                            color: rgba(0,0,0,.75);
-                        }
-                    }
 
                     .card-text {
                         font-size: 1.1rem;
+                    }
+                }
+                &:hover {
+                    .nav-item {
+                        .nav-link {
+                            transition: all .5s ease-in-out;
+                            color: #aaa;
+                        }
+                        &:hover {
+                            .nav-link {
+                                color: #363636;
+                            }
+                        }
                     }
                 }
             }
