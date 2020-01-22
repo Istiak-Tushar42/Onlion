@@ -4,6 +4,27 @@
             a {
                 color: #212529;
             }
+            .nav {
+                .nav-item {
+                    .nav-link {
+                        color: #212529;
+                        padding: 0;
+                        padding-right: .8rem;
+                        i {
+                            font-size: 26px;
+                        }
+                    }
+                    &:hover {
+                        .nav-link {
+                            color: rgba(0,0,0,.75);
+                        }
+                    }
+
+                    .card-text {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
         }
     }
 }
