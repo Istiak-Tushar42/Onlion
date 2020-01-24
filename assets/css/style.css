@@ -273,6 +273,21 @@ article, aside, figcaption, figure, footer, hgroup, main, section {
 }
 
 /*=================================
+            APPROACH
+===================================*/
+.approach {
+  overflow: hidden;
+}
+
+.approach .pair {
+  height: 100%;
+}
+
+.approach .pair img {
+  height: 100% !important;
+}
+
+/*=================================
             CALL-NOW
 ===================================*/
 .callNow {
