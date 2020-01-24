@@ -149,37 +149,6 @@ article, aside, figcaption, figure, footer, hgroup, main, section {
 }
 
 /*=================================
-            FOOTER
-===================================*/
-.footer .card .card-body a {
-  color: #212529;
-}
-
-.footer .card .card-body .nav .nav-item .nav-link {
-  color: #212529;
-  padding: 0;
-  padding-right: .8rem;
-}
-
-.footer .card .card-body .nav .nav-item .nav-link i {
-  font-size: 26px;
-}
-
-.footer .card .card-body .nav .nav-item .card-text {
-  font-size: 1.1rem;
-}
-
-.footer .card .card-body .nav:hover .nav-item .nav-link {
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  color: #aaa;
-}
-
-.footer .card .card-body .nav:hover .nav-item:hover .nav-link {
-  color: #363636;
-}
-
-/*=================================
                 ABOUT
 ===================================*/
 .about {
@@ -304,7 +273,10 @@ article, aside, figcaption, figure, footer, hgroup, main, section {
 
 .callNow .card .card-body .my-button {
   font-size: 18px;
-  width: 200px;
+  width: 230px;
+  height: 60px;
+  vertical-align: middle;
+  line-height: 2.25em;
   text-align: center;
   border-radius: 0;
   padding: .5rem 0;
@@ -317,6 +289,138 @@ article, aside, figcaption, figure, footer, hgroup, main, section {
 
 .callNow .card .card-body .my-button:hover {
   background: #363636;
+}
+
+/*=================================
+            INTERIOR
+===================================*/
+.interior-design {
+  width: 100%;
+  height: calc(100vh + 200px);
+  background: url(../images/about.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  font-family: 'Raleway', sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+.interior-design .card {
+  z-index: 1;
+  border-radius: 0;
+  color: white;
+  position: absolute;
+  bottom: 200px;
+  width: 100%;
+  background: transparent;
+}
+
+.interior-design .card .card-body {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.interior-design .card .card-body .card-title {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: .25rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.interior-design .card .card-body .card-text {
+  font-size: 1.25rem;
+}
+
+.interior-design .card .card-body .important {
+  color: #fafafa;
+  font-size: 2rem;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.interior-design .card .card-body .my-button {
+  font-size: 18px;
+  width: 200px;
+  text-align: center;
+  border-radius: 0;
+  padding: .5rem 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  border: solid 1px #363636;
+  color: white;
+  margin: 1rem auto;
+}
+
+.interior-design .card .card-body .my-button:hover {
+  background: #363636;
+}
+
+.interior-design .overlay:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/*=================================
+                MAIN
+===================================*/
+main {
+  margin-top: 200px;
+  /*=================================
+                HOME-INTERIOR
+    ===================================*/
+}
+
+main .clients {
+  margin-top: 3rem;
+}
+
+main .clients .card {
+  background: transparent;
+}
+
+main .clients .card img {
+  max-width: 100px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+main .clients .card .card-body .card-title {
+  font-weight: bold;
+}
+
+main .interior-desc {
+  padding: 5rem 0;
+  margin-bottom: 5rem;
+}
+
+main .interior-desc .rightdown {
+  margin-top: 5rem;
+}
+
+main .mgtop {
+  margin-top: 5rem;
+}
+
+main .home-interior .bottom {
+  margin-bottom: 8rem;
+}
+
+main .card {
+  height: 100%;
+}
+
+main .card .card-body .card-title {
+  font-family: 'Heebo',Helvetica,Arial,Lucida,sans-serif;
+  font-weight: 100;
+}
+
+main .card .card-body hr {
+  border-color: #363636;
+  margin: 3rem 0;
 }
 
 /*=================================
@@ -413,6 +517,46 @@ article, aside, figcaption, figure, footer, hgroup, main, section {
 .contact .card .card-body .lead a {
   text-decoration: none;
   color: #333;
+}
+
+/*=================================
+            FOOTER
+===================================*/
+.footer {
+  background: #eee;
+}
+
+.footer .card {
+  background: transparent;
+  padding-top: 4rem;
+}
+
+.footer .card .card-body a {
+  color: #212529;
+}
+
+.footer .card .card-body .nav .nav-item .nav-link {
+  color: #212529;
+  padding: 0;
+  padding-right: .8rem;
+}
+
+.footer .card .card-body .nav .nav-item .nav-link i {
+  font-size: 26px;
+}
+
+.footer .card .card-body .nav .nav-item .card-text {
+  font-size: 1.1rem;
+}
+
+.footer .card .card-body .nav:hover .nav-item .nav-link {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  color: #aaa;
+}
+
+.footer .card .card-body .nav:hover .nav-item:hover .nav-link {
+  color: #363636;
 }
 
 /*=================================
