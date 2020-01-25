@@ -367,60 +367,317 @@ article, aside, figcaption, figure, footer, hgroup, main, section {
 /*=================================
                 MAIN
 ===================================*/
-main {
+.interior-main {
   margin-top: 200px;
   /*=================================
                 HOME-INTERIOR
     ===================================*/
+  /*=================================
+                interiorproject
+    ===================================*/
 }
 
-main .clients {
+.interior-main .clients {
   margin-top: 3rem;
 }
 
-main .clients .card {
+.interior-main .clients .card {
   background: transparent;
 }
 
-main .clients .card img {
+.interior-main .clients .card img {
   max-width: 100px;
   margin: auto;
   margin-bottom: 2rem;
 }
 
-main .clients .card .card-body .card-title {
+.interior-main .clients .card .card-body .card-title {
   font-weight: bold;
 }
 
-main .interior-desc {
+.interior-main .interior-desc {
   padding: 5rem 0;
   margin-bottom: 5rem;
 }
 
-main .interior-desc .rightdown {
+.interior-main .interior-desc .rightdown {
   margin-top: 5rem;
 }
 
-main .mgtop {
+.interior-main .mgtop {
   margin-top: 5rem;
 }
 
-main .home-interior .bottom {
+.interior-main .home-interior .bottom {
   margin-bottom: 8rem;
 }
 
-main .card {
+.interior-main .card {
   height: 100%;
 }
 
-main .card .card-body .card-title {
+.interior-main .card .card-body .card-title {
   font-family: 'Heebo',Helvetica,Arial,Lucida,sans-serif;
   font-weight: 100;
 }
 
-main .card .card-body hr {
+.interior-main .card .card-body hr {
   border-color: #363636;
   margin: 3rem 0;
+}
+
+.interior-main .interiorproject .card .card-header hr {
+  border-color: #363636;
+  width: 50%;
+  margin: 3rem auto 5rem;
+}
+
+.interior-main .interiorproject .card .card-body .carousel .carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #363636;
+  background-clip: padding-box;
+}
+
+.interior-main .client .card .card-header hr {
+  border-color: #363636;
+  width: 50%;
+  margin: 3rem auto 5rem;
+}
+
+.interior-main .client .card .card-body img {
+  width: 16%;
+  margin-bottom: 3rem;
+}
+
+.interior-main .client .card .card-body .img-fluid {
+  max-width: 100%;
+  display: inline-block;
+}
+
+/*=================================
+            CONCRETE
+===================================*/
+.concrete {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/concrete.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+}
+
+.concrete .center {
+  z-index: 1;
+}
+
+.concrete .center h3 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: .2em;
+  line-height: 1.6em;
+  color: white;
+  z-index: 1;
+}
+
+.concrete .center .my-btn {
+  width: 150px;
+  border-radius: 0;
+  padding: .5rem 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  border: solid 1px #fff;
+  color: white;
+}
+
+.concrete .center .my-btn:hover {
+  background: #363636;
+  border: solid 1px #363636;
+}
+
+.concrete .overlay:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+/*=================================
+            LOOK-AT
+===================================*/
+.concret {
+  margin-bottom: 5rem;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/concret.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.concret .card {
+  margin: 5rem 0;
+  z-index: 1;
+  color: white;
+}
+
+.concret .overlay:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+/*=================================
+            CONSTRUCTION
+===================================*/
+.construction {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/construction.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+}
+
+.construction .center {
+  z-index: 1;
+}
+
+.construction .center h3 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: .2em;
+  line-height: 1.6em;
+  color: white;
+  z-index: 1;
+}
+
+.construction .center .my-btn {
+  width: 150px;
+  border-radius: 0;
+  padding: .5rem 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  border: solid 1px #fff;
+  color: white;
+}
+
+.construction .center .my-btn:hover {
+  background: #363636;
+  border: solid 1px #363636;
+}
+
+.construction .overlay:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/*=================================
+            ABOUTS
+===================================*/
+.abouts {
+  margin: 5rem 0;
+}
+
+.abouts .card .card-body .card-title {
+  font-family: 'Raleway', sans-serif;
+}
+
+.abouts .card .card-body .card-text {
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+/*=================================
+            LOOK-AT
+===================================*/
+.lookat {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/construction-bg.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.lookat .card {
+  margin: 5rem 0;
+  z-index: 1;
+  color: white;
+}
+
+.lookat .overlay:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/*=================================
+            ASSETS
+===================================*/
+.assets {
+  padding: 8rem;
 }
 
 /*=================================

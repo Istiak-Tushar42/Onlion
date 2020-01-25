@@ -71,7 +71,7 @@
 /*=================================
                 MAIN
 ===================================*/
-main {
+.interior-main {
     margin-top: 200px;
     // CLIENTS
     .clients {
@@ -120,6 +120,55 @@ main {
             hr {
                 border-color: #363636;
                 margin: 3rem 0;
+            }
+        }
+    }
+    /*=================================
+                interiorproject
+    ===================================*/
+    .interiorproject {
+        .card {
+            .card-header {
+                hr {
+                    border-color: #363636;
+                    width: 50%;
+                    margin: 3rem auto 5rem;
+                }
+            }
+            .card-body {
+                .carousel {
+                    .carousel-indicators {
+                        li {
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 50%;
+                            background: #363636;
+                            background-clip: padding-box;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .client {
+        .card {
+            .card-header {
+                hr {
+                    border-color: #363636;
+                    width: 50%;
+                    margin: 3rem auto 5rem;
+                }
+            }
+            .card-body {
+                img {
+                    width: 16%;
+                    margin-bottom: 3rem;
+                }
+                .img-fluid {
+                    max-width: 100%;
+                    display: inline-block;
+                }
             }
         }
     }

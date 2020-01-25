@@ -1,0 +1,112 @@
+/*=================================
+            CONSTRUCTION
+===================================*/
+.construction {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/construction.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    .center {
+        z-index: 1;
+        h3 {
+            font-size: 3rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-style: normal;
+            letter-spacing: .2em;
+            line-height: 1.6em;
+            color: white;
+            z-index: 1;
+        }
+
+        .my-btn {
+            width: 150px;
+            border-radius: 0;
+            padding: .5rem 0;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+            border: solid 1px #fff;
+            color: white;
+            &:hover {
+                background: #363636;
+                border: solid 1px #363636;
+            }
+        }
+    }
+
+    .overlay {
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0,0,0,.5);
+        }
+    }
+}
+
+/*=================================
+            ABOUTS
+===================================*/
+.abouts {
+    margin: 5rem 0;
+    .card {
+        .card-body {
+            .card-title {
+                font-family: 'Raleway', sans-serif;
+            }
+            .card-text {
+                line-height: 1.5;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+/*=================================
+            LOOK-AT
+===================================*/
+.lookat {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/construction-bg.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .card {
+        margin: 5rem 0;
+        z-index: 1;
+        color: white;
+    }
+
+    .overlay {
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0,0,0,.6);
+        }
+    }
+}
+
+/*=================================
+            ASSETS
+===================================*/
+.assets {
+    padding: 8rem;
+}
