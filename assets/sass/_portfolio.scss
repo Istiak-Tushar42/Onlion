@@ -1,0 +1,55 @@
+/*=================================
+            PORTFOLIO
+===================================*/
+.portfolio-banner {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/portfolio.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .center {
+        z-index: 1;
+        .my-btn {
+            width: 150px;
+            border-radius: 0;
+            padding: .5rem 0;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+            border: solid 1px #fff;
+            color: white;
+            &:hover {
+                background: #363636;
+                border: solid 1px #363636;
+            }
+        }
+    }  
+
+    .overlay {
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0,0,0,.5);
+        }
+    }
+}
+
+
+/*=================================
+            PORTFOLIOS
+===================================*/
+.portfolios {
+    background: #fafafa;
+    margin-bottom: 5rem;
+    .card {
+        height: 100%;
+    }
+}
