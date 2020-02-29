@@ -2,18 +2,27 @@
             FOOTER
 ===================================*/
 .footer {
-    background: #eee;
+    background: rgba(0, 0, 0, .9);
+    // background: #2b2b2b;
+    color: #fafafa;
+    .text-dark {
+        color: #999 !important;
+        font-weight: bold;
+        &:hover {
+            color: #fff !important;
+        }
+    }
     .card {
         background: transparent;
         padding-top: 4rem;
         .card-body {
             a {
-                color: #212529;
+                color: #fafafa;
             }
             .nav {
                 .nav-item {
                     .nav-link {
-                        color: #212529;
+                        color: #fafafa;
                         padding: 0;
                         padding-right: .8rem;
                         i {
@@ -29,11 +38,11 @@
                     .nav-item {
                         .nav-link {
                             transition: all .5s ease-in-out;
-                            color: #aaa;
+                            color: #333;
                         }
                         &:hover {
                             .nav-link {
-                                color: #363636;
+                                color: #fafafa;
                             }
                         }
                     }

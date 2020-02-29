@@ -369,20 +369,11 @@ article, aside, figcaption, figure, footer, hgroup, main, section {
 ===================================*/
 .interior-main {
   margin-top: 200px;
-  /*=================================
-                HOME-INTERIOR
-    ===================================*/
-  /*=================================
-                interiorproject
-    ===================================*/
-}
-
-.interior-main .clients {
-  margin-top: 3rem;
 }
 
 .interior-main .clients .card {
   background: transparent;
+  margin-top: 100px;
 }
 
 .interior-main .clients .card img {
@@ -395,63 +386,281 @@ article, aside, figcaption, figure, footer, hgroup, main, section {
   font-weight: bold;
 }
 
-.interior-main .interior-desc {
-  padding: 5rem 0;
-  margin-bottom: 5rem;
+.interior-main .architecture {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/architecture.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  font-family: 'Raleway', sans-serif;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.interior-main .interior-desc .rightdown {
-  margin-top: 5rem;
+.interior-main .architecture .center {
+  z-index: 1;
+  color: white;
 }
 
-.interior-main .mgtop {
-  margin-top: 5rem;
+.interior-main .architecture .overlay:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
 }
 
-.interior-main .home-interior .bottom {
-  margin-bottom: 8rem;
+.interior-main .structure {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/structural.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  font-family: 'Raleway', sans-serif;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.interior-main .card {
-  height: 100%;
+.interior-main .structure .center {
+  z-index: 1;
+  color: white;
 }
 
-.interior-main .card .card-body .card-title {
-  font-family: 'Heebo',Helvetica,Arial,Lucida,sans-serif;
-  font-weight: 100;
+.interior-main .structure .overlay:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
 }
 
-.interior-main .card .card-body hr {
-  border-color: #363636;
-  margin: 3rem 0;
+.interior-main .electrical {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/electrical.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  font-family: 'Raleway', sans-serif;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.interior-main .interiorproject .card .card-header hr {
-  border-color: #363636;
-  width: 50%;
-  margin: 3rem auto 5rem;
+.interior-main .electrical .center {
+  z-index: 1;
+  color: white;
 }
 
-.interior-main .interiorproject .card .card-body .carousel .carousel-indicators li {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
+.interior-main .electrical .overlay:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.interior-main .plumbing {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/plumbing.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  font-family: 'Raleway', sans-serif;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.interior-main .plumbing .center {
+  z-index: 1;
+  color: white;
+}
+
+.interior-main .plumbing .overlay:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+/*=================================
+            INTERIOR
+===================================*/
+.interior-design {
+  width: 100%;
+  height: calc(100vh + 200px);
+  background: url(../images/about.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  font-family: 'Raleway', sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+.interior-design .card {
+  z-index: 1;
+  border-radius: 0;
+  color: white;
+  position: absolute;
+  bottom: 200px;
+  width: 100%;
+  background: transparent;
+}
+
+.interior-design .card .card-body {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.interior-design .card .card-body .card-title {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: .25rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.interior-design .card .card-body .card-text {
+  font-size: 1.25rem;
+}
+
+.interior-design .card .card-body .important {
+  color: #fafafa;
+  font-size: 2rem;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.interior-design .card .card-body .my-button {
+  font-size: 18px;
+  width: 200px;
+  text-align: center;
+  border-radius: 0;
+  padding: .5rem 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  border: solid 1px #363636;
+  color: white;
+  margin: 1rem auto;
+}
+
+.interior-design .card .card-body .my-button:hover {
   background: #363636;
-  background-clip: padding-box;
 }
 
-.interior-main .client .card .card-header hr {
+.interior-design .overlay:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/*=================================
+                MAIN
+===================================*/
+.main {
+  margin-top: 200px;
+}
+
+.main .service {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/hero.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.main .service .center {
+  z-index: 1;
+}
+
+.main .service .center h3 {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-style: normal;
+  letter-spacing: .2em;
+  line-height: 1.6em;
+  color: white;
+  z-index: 1;
+}
+
+.main .service .overlay:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.main .client .card .card-header hr {
   border-color: #363636;
   width: 50%;
   margin: 3rem auto 5rem;
 }
 
-.interior-main .client .card .card-body img {
+.main .client .card .card-body img {
   width: 16%;
   margin-bottom: 3rem;
 }
 
-.interior-main .client .card .card-body .img-fluid {
+.main .client .card .card-body .img-fluid {
   max-width: 100%;
   display: inline-block;
 }
@@ -555,6 +764,221 @@ article, aside, figcaption, figure, footer, hgroup, main, section {
   bottom: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.75);
+}
+
+/*=================================
+                MAIN
+===================================*/
+.concrete-main {
+  /*=================================
+                HOME-INTERIOR
+    ===================================*/
+  /*=================================
+                interiorproject
+    ===================================*/
+}
+
+.concrete-main .clients {
+  margin-top: 3rem;
+}
+
+.concrete-main .clients .card {
+  background: transparent;
+}
+
+.concrete-main .clients .card img {
+  max-width: 100px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.concrete-main .clients .card .card-body .card-title {
+  font-weight: bold;
+}
+
+.concrete-main .interior-desc {
+  padding: 5rem 0;
+  margin-bottom: 5rem;
+}
+
+.concrete-main .interior-desc .rightdown {
+  margin-top: 5rem;
+}
+
+.concrete-main .mgtop {
+  margin-top: 5rem;
+}
+
+.concrete-main .home-interior .bottom {
+  margin-bottom: 8rem;
+}
+
+.concrete-main .card {
+  height: 100%;
+}
+
+.concrete-main .card .card-body .card-title {
+  font-family: 'Heebo',Helvetica,Arial,Lucida,sans-serif;
+  font-weight: 100;
+}
+
+.concrete-main .card .card-body hr {
+  border-color: #363636;
+  margin: 3rem 0;
+}
+
+.concrete-main .interiorproject .card .card-header hr {
+  border-color: #363636;
+  width: 50%;
+  margin: 3rem auto 5rem;
+}
+
+.concrete-main .interiorproject .card .card-body .carousel .carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #363636;
+  background-clip: padding-box;
+}
+
+.concrete-main .client .card .card-header hr {
+  border-color: #363636;
+  width: 50%;
+  margin: 3rem auto 5rem;
+}
+
+.concrete-main .client .card .card-body img {
+  width: 16%;
+  margin-bottom: 3rem;
+}
+
+.concrete-main .client .card .card-body .img-fluid {
+  max-width: 100%;
+  display: inline-block;
+}
+
+.concrete-main .rod {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/rod.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  font-family: 'Raleway', sans-serif;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.concrete-main .rod .center {
+  z-index: 1;
+  color: white;
+}
+
+.concrete-main .rod .overlay:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.concrete-main .cement {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/cement.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  font-family: 'Raleway', sans-serif;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.concrete-main .cement .center {
+  z-index: 1;
+  color: white;
+}
+
+.concrete-main .cement .overlay:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.concrete-main .readymix {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/ready.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  font-family: 'Raleway', sans-serif;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.concrete-main .readymix .center {
+  z-index: 1;
+  color: white;
+}
+
+.concrete-main .readymix .overlay:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.concrete-main .details {
+  background: transparent;
+  margin-top: 100px;
+}
+
+.concrete-main .details img {
+  max-width: 100px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.concrete-main .details .card-body {
+  text-align: center;
+}
+
+.concrete-main .details .card-body .card-title {
+  font-weight: bold;
 }
 
 /*=================================
@@ -843,7 +1267,17 @@ article, aside, figcaption, figure, footer, hgroup, main, section {
             FOOTER
 ===================================*/
 .footer {
-  background: #eee;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fafafa;
+}
+
+.footer .text-dark {
+  color: #999 !important;
+  font-weight: bold;
+}
+
+.footer .text-dark:hover {
+  color: #fff !important;
 }
 
 .footer .card {
@@ -852,11 +1286,11 @@ article, aside, figcaption, figure, footer, hgroup, main, section {
 }
 
 .footer .card .card-body a {
-  color: #212529;
+  color: #fafafa;
 }
 
 .footer .card .card-body .nav .nav-item .nav-link {
-  color: #212529;
+  color: #fafafa;
   padding: 0;
   padding-right: .8rem;
 }
@@ -872,11 +1306,11 @@ article, aside, figcaption, figure, footer, hgroup, main, section {
 .footer .card .card-body .nav:hover .nav-item .nav-link {
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  color: #aaa;
+  color: #333;
 }
 
 .footer .card .card-body .nav:hover .nav-item:hover .nav-link {
-  color: #363636;
+  color: #fafafa;
 }
 
 /*=================================

@@ -73,11 +73,12 @@
 ===================================*/
 .interior-main {
     margin-top: 200px;
+    // color: #FCFDFE;
     // CLIENTS
     .clients {
-        margin-top: 3rem;
         .card {
             background: transparent;
+            margin-top: 100px;
             img {
                 max-width: 100px;
                 margin: auto;
@@ -91,86 +92,127 @@
         }
     }
 
-    .interior-desc {
-        padding: 5rem 0;
-        margin-bottom: 5rem;
-        .rightdown {
-            margin-top: 5rem;
+    // ARCHITECTURAL-DESIGN
+    .architecture {
+        width: 100%;
+        height: 100vh;
+        background: url(../images/architecture.jpg) no-repeat center center/cover;
+        background-attachment: fixed;
+        font-family: 'Raleway', sans-serif;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .center {
+            z-index: 1;
+            color: white;
         }
-    }
-    .mgtop {
-        margin-top: 5rem;
-    }
 
-    /*=================================
-                HOME-INTERIOR
-    ===================================*/
-    .home-interior {
-        .bottom {
-            margin-bottom: 8rem;
-        }
-    }
-    .card {
-        height: 100%;
-        .card-body {
-            .card-title {
-                font-family: 'Heebo',Helvetica,Arial,Lucida,sans-serif;
-                font-weight: 100;
-            }
-            hr {
-                border-color: #363636;
-                margin: 3rem 0;
-            }
-        }
-    }
-    /*=================================
-                interiorproject
-    ===================================*/
-    .interiorproject {
-        .card {
-            .card-header {
-                hr {
-                    border-color: #363636;
-                    width: 50%;
-                    margin: 3rem auto 5rem;
-                }
-            }
-            .card-body {
-                .carousel {
-                    .carousel-indicators {
-                        li {
-                            width: 15px;
-                            height: 15px;
-                            border-radius: 50%;
-                            background: #363636;
-                            background-clip: padding-box;
-                        }
-                    }
-                }
+        .overlay {
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background: rgba(0,0,0,.75);
             }
         }
     }
 
-    .client {
-        .card {
-            .card-header {
-                hr {
-                    border-color: #363636;
-                    width: 50%;
-                    margin: 3rem auto 5rem;
-                }
-            }
-            .card-body {
-                img {
-                    width: 16%;
-                    margin-bottom: 3rem;
-                }
-                .img-fluid {
-                    max-width: 100%;
-                    display: inline-block;
-                }
+    // STRUCTURAL-DRAWING
+    .structure {
+        width: 100%;
+        height: 100vh;
+        background: url(../images/structural.jpg) no-repeat center center/cover;
+        background-attachment: fixed;
+        font-family: 'Raleway', sans-serif;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .center {
+            z-index: 1;
+            color: white;
+        }
+
+        .overlay {
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background: rgba(0,0,0,.75);
             }
         }
     }
 
+    // ELECTRICAL-DRAWING
+    .electrical {
+        width: 100%;
+        height: 100vh;
+        background: url(../images/electrical.jpg) no-repeat center center/cover;
+        background-attachment: fixed;
+        font-family: 'Raleway', sans-serif;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .center {
+            z-index: 1;
+            color: white;
+        }
+
+        .overlay {
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background: rgba(0,0,0,.75);
+            }
+        }
+    }
+
+    // PLUMBING-DRAWING
+    .plumbing {
+        width: 100%;
+        height: 100vh;
+        background: url(../images/plumbing.jpg) no-repeat center center/cover;
+        background-attachment: fixed;
+        font-family: 'Raleway', sans-serif;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .center {
+            z-index: 1;
+            color: white;
+        }
+
+        .overlay {
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background: rgba(0,0,0,.75);
+            }
+        }
+    }
 }
